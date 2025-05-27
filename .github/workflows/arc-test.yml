@@ -1,0 +1,21 @@
+name: Actions Runner Controller Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: arc-runner-set
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: echo "🎉 This job uses ARC runner scale set runners!"
+
+      - name: Display hostname
+        run: hostname
+
+      - name: Show current directory
+        run: pwd
+
