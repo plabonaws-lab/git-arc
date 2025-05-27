@@ -16,6 +16,9 @@ jobs:
       - name: Display hostname
         run: hostname
 
+      - name: Wait 10 seconds
+        run: sleep 10s
+
       - name: Show current directory
         run: pwd
 
